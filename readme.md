@@ -34,7 +34,7 @@ Me and Tommy and conceived a plan for how we could structure all kinds of intera
 This made the task less complex than it would have been otherwise.   
 It was also worth the effort because the camera transition system could be re-used or adapted for other features, such as the level finish sequence.   
 
-![Interaction Pattern](web_data/image/interaction pattern.png)
+![Interaction Pattern](web_data/image/interaction_pattern.png)
 
 ### Launcher
 The Launcher starts the player into the game, and also any time the stone resets upon sinking.

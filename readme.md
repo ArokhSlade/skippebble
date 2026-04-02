@@ -29,10 +29,10 @@ Tidiness is no great engineering feat but it goes a long way in strengthening my
 
 ### Tutorial, Camera + Pause
 <img align="right"  src="web_data/image/tutorial-pause.gif">
-We wanted a tutorial, but were limited on resources.   
-Sign Posts are classic solution, but hard to read at high speeds.   
-Our solution: Pause game and zoom in on Sign.   
-We came up with an architecture that could easily support this.   
+We wanted a tutorial, but were limited on resources.   <br>
+Sign Posts are classic solution, but hard to read at high speeds.   <br>
+Our solution: Pause game and zoom in on Sign.   <br>
+We came up with an architecture that could easily support this.   <br>
 Pay-off was good, for we could re-use this feature for the level finish.   
 <!--![Tutorial Pause](web_data/image/tutorial-pause-1.gif)   -->
 

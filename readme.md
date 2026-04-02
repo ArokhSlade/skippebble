@@ -28,11 +28,13 @@ Tidiness is no great engineering feat but it goes a long way in strengthening my
 ![Player Controller Blueprint](web_data/image/pc_ingame-event_graph.gif)
 
 ### Tutorial, Camera + Pause
-![Tutorial Pause](web_data/image/tutorial-pause-1.gif)   
-We wanted a tutorial, but were limited on resources. Plain sign posts were too hard to read for speedy players.   
-Me and Tommy and conceived a plan for how we could structure all kinds of interaction in the game in a regular fashion.   
-This made the task less complex than it would have been otherwise.   
-It was also worth the effort because the camera transition system could be re-used or adapted for other features, such as the level finish sequence.   
+<img style="float: left; margin-right: 10pt" width="auto"src="web_data/image/tutorial-pause-1.gif">
+We wanted a tutorial, but were limited on resources.    
+Sign Posts are classic solution, but hard to read at high speeds.   
+Our solution: Pause game and zoom in on Sign.   
+We came up with an architecture that could easily support this.   
+Pay-off was good, for we could re-use this feature for the level finish.   
+<!--![Tutorial Pause](web_data/image/tutorial-pause-1.gif)   -->
 
 ![Interaction Pattern](web_data/image/interaction_pattern.png)
 
@@ -56,8 +58,9 @@ Here for example, I take advantage of Perforce's Markdown Support, also linking 
 
 
 ## Production Learnings
-Time lost to sickness cannot be recovered and must be accounted for in advance.
-Production information presented in a sleek, visual manner can be more effective than comprehensive, detailed backlogs, especially when the production tool is not suited for presenting a lot of information on limited screenspace.
+Time lost to sickness cannot be recovered and must be accounted for in advance.   
+Production information presented in a sleek, visual manner can be more effective than comprehensive, detailed backlogs,    
+especially when the production tool is not suited for presenting a lot of information on limited screenspace.
 
 
 ## Team

@@ -28,13 +28,16 @@ Tidiness is no great engineering feat but it goes a long way in strengthening my
 ![Player Controller Blueprint](web_data/image/pc_ingame-event_graph.gif)
 
 ### Tutorial, Camera + Pause
-<img align="right"  style="margin-left: 50px;" src="web_data/image/tutorial-pause.gif">
-We wanted a tutorial, but were limited on resources.<br>
+<table>
+  <tr>
+    <td>We wanted a tutorial, but were limited on resources.<br>
 Sign Posts are classic solution, but hard to read at high speeds.<br>
 Our solution: Pause game and zoom in on sign.<br>
 We came up with an architecture that could easily support this.<br>
-Pay-off was good, for we could re-use this feature for the level finish.   
-<!--![Tutorial Pause](web_data/image/tutorial-pause-1.gif)   -->
+Pay-off was good, for we could re-use this feature for the level finish.   </td>
+    <td><img align="right" src="web_data/image/tutorial-pause.gif"></td>
+  </tr>
+</table>
 
 ![Interaction Pattern](web_data/image/interaction_pattern.png)
 

@@ -66,10 +66,11 @@ The control flow is thus:
 	<tr>
 		<td rowspan="2">
 			The Launcher shoots players into the level.<br>
-			This seemingly small feature required realitvely heavy refactoring, as it touches on many systems.<br>
+			This seemingly small feature required realitvely heavy refactoring, <br>
+			as it touches on many systems.<br>
 			Thus it revealed and informed us about the needs for our architecture.
 		</td>
-		<td colspawn="2">
+		<td colspan="2">
 			Adjacent systems:
 		</td>
 	</tr>
@@ -91,7 +92,7 @@ The control flow is thus:
 		</td>
 	</tr>
 	<tr>
-		<td colspan="2">
+		<td colspan="3">
 			<img src="web_data/image/launcher.gif"/>
 		</td>
 	</tr>
@@ -128,19 +129,19 @@ The control flow is thus:
 ### Tasks + Submits documentation
 <table>
 	<tr>
-		<td>
-			<img src="web_data/image/documentation.png" />
+		<td width="25%">
+			Generally I try to keep submits small and submit messages to the point.<br>
+			However, when I do more rigorous bugfixes or refactors like this one, I make sure to document my rationale and changes in appropriate detail.<br>
+			I take advantage of Perforce's Markdown Support, also linking the submit to the task card on our production tool, Taiga.
 		</td>
 		<td>
-			Generally I try to keep submits small and submit messages to the point.<br>
-			Whenever I do more rigorous bugfixes or refactors like this one, I make sure to document my rationale and changes in appropriate detail.<br>
-			I take advantage of Perforce's Markdown Support, also linking the submit to the task card on our production tool, Taiga.
+			<img src="web_data/image/documentation.png" />
 		</td>
 	</tr>
 </table>
 
 ## Production Learnings
 Time lost to sickness cannot be recovered and must be accounted for in advance.   
-Production information presented in a sleek, visual manner can be more effective than comprehensive, detailed backlogs.   
-For our Post Production sprint we chose a table on Miro to our Taiga taskboard.
+Production information presented in a sleek, visual manner can be more effective than comprehensive, detailed backlogs   
+(for our Post Production sprint we chose a table on Miro to our Taiga taskboard).
 

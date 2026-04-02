@@ -38,7 +38,7 @@ It was also worth the effort because the camera transition system could be re-us
 
 ### Launcher
 The Launcher starts the player into the game, and also any time the stone resets upon sinking.
-This seemingly small feature required some heavy refactoring, as it was implemented fairly late but touched on many systems and thus obviated the need to invest in better structure.   
+This seemingly small feature required some heavy refactoring, as it was implemented fairly late but touched on many systems and thus revealed the need to invest in better structure.   
 ![Tutorial Pause](web_data/image/launcher.gif)
 
 This is the list of systems this feature interacts with.
@@ -50,7 +50,7 @@ This is the list of systems this feature interacts with.
 - Widget
    
 Whenever I do more rigorous bugfixes or refactors like this one, I make sure to document my rationale and changes in appropriate detail.
-![Submit Message](web_data/image/documentation.png)
+![Submit Message](web_data/image/documentation.png)   
 Here for example, I take advantage of Perforce's Markdown Support, also linking the submit to the task card on our production tool, Taiga.
 
 

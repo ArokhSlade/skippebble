@@ -30,16 +30,22 @@ Tidiness is no great engineering feat but it goes a long way in strengthening my
 ### Tutorial, Camera + Pause
 <table>
   <tr>
-    <td>We wanted a tutorial, but were limited on resources.<br>
-Sign Posts are classic solution, but hard to read at high speeds.<br>
-Our solution: Pause game and zoom in on sign.<br>
-We came up with an architecture that could easily support this.<br>
-Pay-off was good, for we could re-use this feature for the level finish.   </td>
+    <td>
+		We wanted a tutorial, but were limited on resources.   
+		Sign Posts are classic solution, but hard to read at high speeds.   
+		Our solution: Pause game and zoom in on sign.   
+		We came up with an architecture to support this, which we could re-use for level end tracking shot.
+	</td>
     <td><img align="right" src="web_data/image/tutorial-pause.gif"></td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+	![Interaction Pattern](web_data/image/interaction_pattern.png)	
   </tr>
 </table>
 
-![Interaction Pattern](web_data/image/interaction_pattern.png)
+
 
 ### Launcher
 The Launcher starts the player into the game, and also any time the stone resets upon sinking.

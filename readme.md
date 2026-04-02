@@ -47,7 +47,9 @@ The control flow is thus:
 	  <td width=75%>
 		<img src="web_data/image/interaction_pattern.png"/>
 	  </td>
-	  <td>
+  </tr>
+  <tr>
+	<td>
 		<ul>
 			<li>Player(Stone) overlaps TutorialSign's TriggerBox</li>
 			<li>TutorialSign calls PauseCamera component</li>

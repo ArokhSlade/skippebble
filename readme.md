@@ -39,7 +39,9 @@ Tidiness is no great engineering feat but it goes a long way in strengthening my
     <td><img align="right" src="web_data/image/tutorial-pause.gif"></td>
   </tr>
   <tr>
-	<td>![Interaction Pattern](web_data/image/interaction_pattern.png)</td>
+	  <td colspan="2">
+		<img src="web_data/image/interaction_pattern.png"/>
+	  </td>
   </tr>
 </table>
 

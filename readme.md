@@ -79,7 +79,6 @@ The control flow is thus:
 				<li>Stone</li>
 				<li>Reset</li>
 				<li>Camera</li>
-				
 			</ul>
 		</td>
 		<td>

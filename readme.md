@@ -4,8 +4,10 @@
 My third semester project at S4G Berlin, and my first in Unreal Engine.   
 As a Team of 9, in 10 weeks, we built an up-beat, high-speed stone skipping game.   
 Players skip and steer a sand dollar with rhythmically precise input,   
-racing through a carribean-dream style water parkour.
+racing through a carribean-inspired water parkour.
 
+## Team
+4 Artists, 3 Designers, 2 Coders, 1 Composer.
 
 ## Work
 | | | | | | |
@@ -13,21 +15,15 @@ racing through a carribean-dream style water parkour.
 | **Programming** | Architecture | UI | Game States | Animation | Camera |
 | **Production** | Backlog | Meetings | Coordination | Scrum | Presentations |
 
-Similar to last project, I supported designers and artists to implement their own ideas, sometimes laying out a structure beforehand, sometimes refactoring afterwards to streamline the code structure.
-For example, when Stina went ahead and coded a basic menu system, I followed up on her request for certain menu animations, i devised a system that i also provided her documentation and briefings for, so she could implement those animations herself.
-Another example was Aljoscha's sound system, which I adapted to work with our scene switching needs.
-The state machine in our player controller was my biggest structural undertaking. To be clear, this had little relation to the stone's movement , which was Tommy's domain.
+Similar to last project, I supported designers and artists to implement their own ideas, sometimes laying out a structure beforehand, sometimes refactoring afterwards to streamline the code structure.   
+For example, when Stina (UI/UX) went ahead and coded a basic menu system, I followed up on her request for certain menu animations.   
+I devised a system that i also provided her documentation and briefings for, so she could implement those animations herself.   
+Another example was Aljoscha's (3D Art) sound system, which I adapted to work with our scene switching needs.   
 
 ## Engineering
 
-### Blueprint cleanliness
-
-![QTE Widget Blueprint](web_data/image/qte_widget_bp.png)
-I think it's important to format blueprints to be as reader friendly as possible.   
-Tidiness is no great engineering feat but it goes a long way in strengthening my code morale and easing future maintanence and debugging work.   
-![Player Controller Blueprint](web_data/image/pc_ingame-event_graph.gif)
-
 ### Tutorial, Camera + Pause
+
 <table>
   <tr>
     <td width=50%>
@@ -38,40 +34,114 @@ Tidiness is no great engineering feat but it goes a long way in strengthening my
 	</td>
     <td><img align="right" src="web_data/image/tutorial-pause.gif"></td>
   </tr>
+</table>
+
+### Interactions
+To trigger interactions such as speed boost, score, tutorial camera, we use a system of "sibling components",
+such as PauseCamera and PauseCameraReceiver ("pause the game and change the camera").
+PauseCamera acts as the trigger, saying what will happend and providing parameters.
+PauseCameraReceiver actually implements the desired effect.
+The control flow is thus:
+<table>
   <tr>
-	  <td colspan="2">
+	  <td width=75%>
 		<img src="web_data/image/interaction_pattern.png"/>
+	  </td>
+	  <td>
+		<ul>
+			<li>Player(Stone) overlaps TutorialSign's TriggerBox</li>
+			<li>TutorialSign calls PauseCamera component</li>
+			<li>PauseCamera component interface-calls into Stone</li>
+			<li>Stone forwards interface call to PlayerController</li>
+			<li>PlayerController calls PauseCameraReceiver</li>
+			<li>PauseCameraReceiver dispatches event</li>
+			<li>Other components react to it</li>
+		</ul>
 	  </td>
   </tr>
 </table>
 
-
-
 ### Launcher
-The Launcher starts the player into the game, and also any time the stone resets upon sinking.
-This seemingly small feature required some heavy refactoring, as it was implemented fairly late but touched on many systems and thus revealed the need to invest in better structure.   
-![Tutorial Pause](web_data/image/launcher.gif)
+<table>
+	<tr>
+		<td rowspan="2">
+			The Launcher shoots players into the level.<br>
+			This seemingly small feature required realitvely heavy refactoring, as it touches on many systems.<br>
+			Thus it revealed and informed us about the needs for our architecture.
+		</td>
+		<td colspawn="2">
+			Adjacent systems:
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<ul>
+				<li>Stone</li>
+				<li>Reset</li>
+				<li>Camera</li>
+				
+			</ul>
+		</td>
+		<td>
+			<ul>
+			<li>Game Phase</li>				
+			<li>Animation</li>
+			<li>Spawning</li>
+			<li>Widget</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="web_data/image/launcher.gif"/>
+		</td>
+	</tr>
+</table>
 
-This is the list of systems this feature interacts with.
-- Stone
-- Reset
-- Camera
-- Animation
-- Spawning
-- Widget
-   
-Whenever I do more rigorous bugfixes or refactors like this one, I make sure to document my rationale and changes in appropriate detail.
-![Submit Message](web_data/image/documentation.png)   
-Here for example, I take advantage of Perforce's Markdown Support, also linking the submit to the task card on our production tool, Taiga.
+## Work Style
+
+### Blueprints
+<table>
+	<tr>
+		<td>
+			First time working with visual scripting I enjoyed the ability to convey information simply by layouting the graph.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="web_data/image/qte_widget_bp.png" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			This PlayerController blueprint was my biggest feature. I implemented it as Facade to keep it modular.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="web_data/image/pc_ingame-event_graph.gif" />
+		</td>
+	</tr>
+</table>
 
 
+
+### Tasks + Submits documentation
+<table>
+	<tr>
+		<td>
+			<img src="web_data/image/documentation.png" />
+		</td>
+		<td>
+			Generally I try to keep submits small and submit messages to the point.<br>
+			Whenever I do more rigorous bugfixes or refactors like this one, I make sure to document my rationale and changes in appropriate detail.<br>
+			I take advantage of Perforce's Markdown Support, also linking the submit to the task card on our production tool, Taiga.
+		</td>
+	</tr>
+</table>
 
 ## Production Learnings
 Time lost to sickness cannot be recovered and must be accounted for in advance.   
-Production information presented in a sleek, visual manner can be more effective than comprehensive, detailed backlogs,    
-especially when the production tool is not suited for presenting a lot of information on limited screenspace.
-
-
-## Team
-4 Artists, 3 Designers, 2 Coders, 1 Composer.
+Production information presented in a sleek, visual manner can be more effective than comprehensive, detailed backlogs.   
+For our Post Production sprint we chose a table on Miro to our Taiga taskboard.
 

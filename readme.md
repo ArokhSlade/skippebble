@@ -30,10 +30,10 @@ Tidiness is no great engineering feat but it goes a long way in strengthening my
 ### Tutorial, Camera + Pause
 <table>
   <tr>
-    <td>
-		We wanted a tutorial, but were limited on resources.   
-		Sign Posts are classic solution, but hard to read at high speeds.   
-		Our solution: Pause game and zoom in on sign.   
+    <td width=50%>
+		We wanted a tutorial, but were limited on resources.<br>
+		Sign Posts are classic solution, but hard to read at high speeds.<br>
+		Our solution: Pause game and zoom in on sign.<br>
 		We came up with an architecture to support this, which we could re-use for level end tracking shot.
 	</td>
     <td><img align="right" src="web_data/image/tutorial-pause.gif"></td>

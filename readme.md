@@ -28,7 +28,7 @@ Tidiness is no great engineering feat but it goes a long way in strengthening my
 ![Player Controller Blueprint](web_data/image/pc_ingame-event_graph.gif)
 
 ### Tutorial, Camera + Pause
-<img style="float: left; margin-right: 10pt; width:33%"  src="web_data/image/tutorial-pause-1.gif">
+<img style="float: left; margin-right: 10pt"  src="web_data/image/tutorial-pause.gif">
 We wanted a tutorial, but were limited on resources.   
 Sign Posts are classic solution, but hard to read at high speeds.   
 Our solution: Pause game and zoom in on Sign.   

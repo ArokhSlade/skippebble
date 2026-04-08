@@ -145,5 +145,5 @@ The control flow is thus:
 ## Production Learnings
 Time lost to sickness cannot be recovered and must be accounted for in advance.   
 Production information presented in a sleek, visual manner can be more effective than comprehensive, detailed backlogs   
-(for our Post Production sprint we chose a table on Miro to our Taiga taskboard).
+(for our Post Production sprint we chose a table on Miro over our Taiga taskboard - for extra agility).
 
